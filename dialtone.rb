@@ -15,7 +15,7 @@ get "/" do
   <p>This is a Ruby/Sinatra-powered <a href="http://phono.com">Phono</a>/<a href="http://tropo.com">Tropo</a> application. Click the button below and say or enter a 10 digit number that you would like to dial and we will do the rest.</p>	
   <h2>How does it work?</h2>
   <p>Phono is a jQuery based VoIP SIP phone that runs in the browser.  When the red button is clicked, it places a SIP call into a Tropo application using the WebAPI.  The Tropo application is written in Ruby and uses the Tropo-WebAPI and Sinatra gems.  The Tropo app first asks the caller to say or enter a phone number.  The phone number is posted back to the Tropo app (/answer) where a transfer response is returned to the Tropo cloud. </p>
-  <p>Check out the code at <a href="https://github.com/chrismatthieu/dialtone">https://github.com/chrismatthieu/rubydialtone</a></p>
+  <p>Check out the code at <a href="https://github.com/chrismatthieu/rubydialtone">https://github.com/chrismatthieu/rubydialtone</a></p>
    <script type="text/javascript">
     $("body").append(
      $("<div/>")
