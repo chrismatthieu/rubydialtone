@@ -1,0 +1,15 @@
+= Tropo Voice Dialtone (Ruby/Sinatra Version)
+
+This is a Ruby/Sinatra-powered Phono (http://phono.com) / Tropo (http://tropo.com) application. Click the Phono button and say or enter a 10 digit number that you would like to dial and we will do the rest.
+
+== How does it work?
+
+Phono is a jQuery based VoIP SIP phone that runs in the browser.  When the red button is clicked, it places a SIP call into a Tropo application using the WebAPI.  The Tropo application is written in Ruby and uses the Tropo-WebAPI-Ruby and Sinatra gems.  The Tropo app first asks the caller to say or enter a phone number.  The phone number is posted back to the Tropo app (/answer) where a transfer response is returned to the Tropo cloud.
+
+== Running on localhost
+
+gem install sinatra
+gem install tropo-webapi-ruby
+
+ruby dialtone.rb
+
